@@ -1,18 +1,18 @@
 
-@import 'settings/mixins';
+@import './settings/mixins';
 
-@import 'settings/reset';
+@import './settings/reset';
 
-@import 'settings/common';
+@import './settings/common';
 
 
-@import 'blocks/header';
+@import './blocks/header';
 
-@import 'blocks/usage';
+@import './blocks/usage';
 
-@import 'blocks/popup-contact';
+@import './blocks/popup-contact.scss';
 
-@import 'blocks/footer';
+@import './blocks/footer';
 
 
 @import 'media';
