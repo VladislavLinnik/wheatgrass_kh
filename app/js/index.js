@@ -1,18 +1,9 @@
 $(document).ready(function(){
-
-    // popup contact
-    // $('.js-popupContact').click(function(){
-    //     $('.popup_contact, .popup_overlay').fadeIn(400); //показываем всплывающее окно
-    // });
-    // $('.popup_contact-close, .popup_overlay').click(function(){
-    //     $('.popup_contact, .popup_overlay').fadeOut(400); //скрываем всплывающее окно
-    // });
-
     
+    // popup for contact
     $('.menu-toggle').on('click', function(){
         $('body').toggleClass('open');
     });
-
     $('.menu-toggle-close').on('click', function(){
         $('body').toggleClass('open');
     });
