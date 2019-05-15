@@ -83,6 +83,23 @@
     opacity: 0;
 }
 
+.popup-nav__logo {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    z-index: 999;
+
+    .logo {
+
+        &-addinfo {
+            width: 100px;
+            color: #fff;
+        }
+    }
+}
+
 
 
 .open-nav {
@@ -112,6 +129,12 @@
         &:hover {
             background-color: #279133;
         }
+    }
+
+    .popup-nav__logo {
+        opacity: 1;
+        transition: opacity .5s;
+        transition-delay: .75s;
     }
 
     .popup-nav__menu-item {

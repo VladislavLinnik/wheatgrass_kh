@@ -11,6 +11,10 @@
         width: 33%;
         border-radius: 10px;
 
+        @media (max-width: 1000px) {
+            width: 50%;
+        }
+
         &:hover {
             background-color: green;
 

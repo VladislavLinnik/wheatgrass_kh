@@ -5,6 +5,10 @@
     &-list {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 1180px) {
+            flex-direction: column;
+        }
     }
     
     .course {
@@ -14,11 +18,25 @@
             width: 30%;
             position: relative;
             display: flex;
+            flex-wrap: wrap;
             flex-direction: column;
             color: #333;
             text-align: center;
             background-color: #fff;
             border-radius: 5px;
+
+            @media (max-width: 1180px) {
+                margin: 0 auto 40px;
+                width: 70%;
+                border-radius: 20px;
+            }
+
+            &:last-child {
+
+                @media (max-width: 1180px) {
+                    margin-bottom: 0;
+                }
+            }
 
             &-content {
                 flex: 1;
