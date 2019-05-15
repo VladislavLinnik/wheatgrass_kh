@@ -1,5 +1,6 @@
 .courses {
-    background-color: rgb(182, 182, 182);
+    background: url('../img/bg_courses.jpg') no-repeat;
+    background-size: cover;
 
     &-list {
         display: flex;

@@ -19,7 +19,7 @@
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
 	<!-- FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab|Montserrat:400,700" rel="stylesheet">
 
 	<!-- STYLES -->
 	<link rel="stylesheet" href="css/style.css">
@@ -46,15 +46,112 @@
 			</p>
 			<nav class="header-nav">
 				<ul class="header-nav__menu" id="smooth">
-					<li class="header-nav__menu-item"><a href="#" class="header-nav__menu-link">О продукте</a></li>
+					<li class="header-nav__menu-item"><a href="#about" class="header-nav__menu-link">О соке</a></li>
 					<li class="header-nav__menu-item"><a href="#benefit" class="header-nav__menu-link">Польза</a></li>
-					<li class="header-nav__menu-item"><a href="#" class="header-nav__menu-link">Наши курсы</a></li>
+					<li class="header-nav__menu-item"><a href="#courses" class="header-nav__menu-link">Наши курсы</a></li>
 					<li class="header-nav__menu-item"><a href="#usage" class="header-nav__menu-link">Как принимать?</a></li>
+					<li class="header-nav__menu-item"><a href="#loyal" class="header-nav__menu-link">Система лояльности</a></li>
+					<li class="header-nav__menu-item"><a href="#usage" class="header-nav__menu-link">Блог</a></li>
 					<li class="header-nav__menu-item"><a href="#" class="header-nav__menu-link--order menu-toggle">Заказать</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
+
+
+	<!-- about -->
+	<section class="about section" id="about">
+		<div class="container">
+			<h2 class="about-h2">О соке</h2>
+			<p class="about-p">
+				<span class="about-p__bold">Сок ростков пшеницы и ячменя</span> - это натуральный органический продукт <br>без химических добавок и консервантов. <br> Оказывает комплексное оздоравливающее действие на организм, <br>позволяя единовременно решить массу проблем
+			</p>
+			<h3 class="about-advantages">Преимущества продукта:</h3>
+			<div class="about-content">
+				<div class="about-content__column">
+					<div class="about-right-item">
+						<div class="about-right-item__img">
+							<img src="./img/about/weight.png" alt="">
+						</div>
+
+						<div class="about-right-text">
+							<h4>Ускоряет метаболизм <br>и способствует снижению веса</h4>
+						</div>
+					</div>
+					<div class="about-right-item">
+						<div class="about-right-item__img">
+							<img src="./img/about/hair.png" alt="">
+						</div>
+
+						<div class="about-right-text">
+							<h4>Укрепляет и оздоравливает волосы и волосяные фолликулы</h4>
+						</div>
+					</div>
+					<div class="about-right-item">
+						<div class="about-right-item__img">
+							<img src="./img/about/running-man.png" alt="">
+						</div>
+
+						<div class="about-right-text">
+							<h4>Является естественным энергетиком, повышает выносливость организма</h4>
+						</div>
+					</div>
+
+					<div class="about-right-item">
+						<div class="about-right-item__img">
+							<img src="./img/about/vitamins.png" alt="">
+						</div>
+
+						<div class="about-right-text">
+							<h4>Снабжает организм растительным белком и огромным комплексом витаминов</h4>
+						</div>
+					</div>
+				</div>
+				<div class="about-content__column">
+					<div class="about-left-item">
+						<div class="about-left-item__img">
+							<img src="./img/about/young.png" alt="">
+						</div>
+
+						<div class="about-left-text">
+							<h4>Омолаживает клетки организма <br>и замедляет старение</h4>
+						</div>
+					</div>
+					<div class="about-left-item">
+						<div class="about-left-item__img">
+							<img src="./img/about/food.png" alt="">
+						</div>
+
+						<div class="about-left-text">
+							<h4>Выводит шлаки и токсины <br>со всех органов (detox-эффект)</h4>
+						</div>
+					</div>
+					<div class="about-left-item">
+						<div class="about-left-item__img">
+							<img src="./img/about/stomach.png" alt="">
+						</div>
+
+						<div class="about-left-text">
+							<h4>Улучшает работу ЖКТ,<br>нормализует пищеварение</h4>
+						</div>
+					</div>
+					<div class="about-left-item">
+						<div class="about-left-item__img">
+							<img src="./img/about/images.png" alt="">
+						</div>
+
+						<div class="about-left-text">
+							<h4>Эффективное оружие против онкозаболеваний,<br>Мсахарного диабета и других</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="about-read-more">
+				<a href="#blog" class="about-read-more">Читать подробнее</a>
+			</div>
+		</div>
+	</section>
 	
 
 	<!-- benefit -->
@@ -110,7 +207,7 @@
 
 
 	<!-- courses -->
-	<section class="courses section">
+	<section class="courses section" id="courses">
 		<div class="container">
 			<ul class="courses-list">
 				<li class="course__card">
@@ -204,6 +301,42 @@
 	</section>
 
 
+
+	<!-- loyal -->
+	<section class="loyal section" id="loyal">
+		<div class="container">
+			<h3 class="loyal-maintext">Система лояльности</h3>
+			<p class="loyal-subtext">Сделайте первый заказ и экономьте на будущеих покупках</p>
+
+			<ul class="loyal-list">
+				<li class="loyal__card">
+					<h4 class="loyal__card-discount">10%</h4>
+					<h4 class="loyal__card-title">Скидка на повторную покупку</h4>
+					<p class="loyal__card-descr">После совершения первой покупки в нашем магазине, вы получаете 10% скидку на заказ, которая действует на протяжении 2-ух месяцев с момента оплаты первого заказа.</p>
+				</li>
+				<li class="loyal__card">
+					<h4 class="loyal__card-discount">10%</h4>
+					<h4 class="loyal__card-title">Скидка за рекомендацию</h4>
+					<p class="loyal__card-descr">При покупке ваш друг или подруга, которые не покупали у нас ранее, говорят оператору 4 последние цифры вашего номера телефона и получают 10% скидку на заказ. 10% скидку получаете и вы. Скидки суммируются с другими вашими скидками.</p>
+				</li>
+				<li class="loyal__card">
+					<h4 class="loyal__card-discount">15%</h4>
+					<h4 class="loyal__card-title">Скидка в день рождения</h4>
+					<p class="loyal__card-descr">Скидка действует за 5 дней до и 5 дней после вашего дня рождения. Скидка суммируется с другими вашими скидками.</p>
+				</li>
+				<li class="loyal__card">
+					<h4 class="loyal__card-discount">100%</h4>
+					<h4 class="loyal__card-title">Скидка на упаковку витграсс объемом 210 мл. (курс на 7 дней)</h4>
+					<ol>
+						<li>Сделай фото с упаковкой нашего сока.</li>
+						<li>Опубликуй фотографию на своем профиле в инстаграмм.</li>
+						<li>Напиши 3 факта о пользе витграсс.</li>
+						<li>Отметь наш аккаунт в описании #wheatgrass_kh и адрес нашего сайта www.wheatgrass.kh.ua</li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+	</section>
 
 
 

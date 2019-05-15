@@ -1,0 +1,189 @@
+.about {
+    font-family: 'Montserrat', sans-serif;
+
+    &-h2 {
+        margin-top: 60px;
+        font-weight: 700;
+        font-size: 32px;
+        color: #333;
+    }
+
+    &-p {
+        margin-top: 40px;
+        font-weight: 300;
+        font-size: 22px;
+        
+        &__bold {
+            font-weight: bold;
+        }
+    }
+
+    .about-h2, .about-p {
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &-advantages {
+        margin-top: 72px;
+        margin-bottom: 30px;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    &-content {
+        padding: 0 4px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: solid 4px #7eaa3b;
+
+        &:before {
+            content: '';
+            width: 0;
+            position: absolute;
+            top: 0;
+            left: 4px;
+            bottom: 0;
+            border-left: solid 4px #7eaa3b;
+            margin-top: 54px;
+            margin-left: -4px;
+        }
+
+        &:after {
+            content: '';
+            width: 0;
+            border-right: solid 4px #7eaa3b;
+            margin-top: 54px;
+            margin-right: -4px;
+        }
+
+        &__column {
+            flex: 0 0 50%;
+            max-width: 50%;
+
+            .about-left-item {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                align-content: flex-end;
+                align-items: center;
+
+                &:before {
+                    display: block;
+                    width: 20px;
+                    height: 0;
+                    border-bottom: solid 4px #7eaa3b;
+                }
+
+                &:nth-child(4){
+                    padding-bottom: 40px;
+                }
+
+                &__img {
+                    position: relative;
+                    display: flex;
+                    flex: 1 1 140px;
+                    justify-content: flex-end;
+                    
+                    img {
+                        border: 2px solid #7eaa3b;
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 100%;
+                        background: #fff;
+                        padding: 3px;
+                        max-width: 100%;
+                    }
+                }
+
+                .about-left-text {
+                    flex: 5 5 500px;
+                    text-transform: uppercase;
+
+                    h4 {
+                        text-align: right;
+                        font-size: 16px;
+                        line-height: 1.4;
+                    }
+                }
+            }
+
+            .about-right-item {
+                display: flex;
+                align-items: center;
+
+                &:before {
+                    display: block;
+                    width: 20px;
+                    height: 0;
+                    border-bottom: solid 4px #7eaa3b;
+                }
+
+                &:nth-child(4){
+                    padding-bottom: 40px;
+                }
+
+                &__img {
+                    flex: 1 1 140px;
+                    position: relative;
+                    display: flex;
+
+                    img {
+                        border: 2px solid #7eaa3b;
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 100%;
+                        background: #fff;
+                        padding: 3px;
+                        max-width: 100%;
+                    }
+                }
+
+                .about-right-text {
+                    flex: 5 5 500px;
+                    text-transform: uppercase;
+
+                    h4 {
+                        text-align: left;
+                        font-size: 16px;
+                        line-height: 1.4;
+                    }
+                }
+            }
+
+            .about-left-item, .about-right-item {
+                margin-top: 16px;
+                margin-bottom: 16px;
+            }
+
+            .about-left-item:before, .about-right-item:before {
+                content: '';
+                left: 15px;
+                top: 40px;
+            }
+        }
+    }
+
+    &-read-more {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 22px;
+        width: 500px;
+        max-width: 90%;
+        z-index: 2;
+        position: relative;
+        margin: -25px auto 40px;
+
+        a {
+            background: #333;
+            color: #f6f6f6;
+            border-radius: 10px;
+            padding: 20px 48px;
+            box-shadow: 0 3px 3px 0 rgba(0,0,0,.5);
+        }
+    }
+}

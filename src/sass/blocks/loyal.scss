@@ -1,0 +1,61 @@
+.loyal {
+    background-color: grey;
+
+    &-maintext {
+        margin-bottom: 15px;
+        color: #fff;
+        font-size: 48px;
+        font-family: 'Roboto Slab', serif;
+        text-align: center;
+    }
+
+    &-subtext {
+        margin-bottom: 50px;
+        color: rgb(247, 148, 29);
+        font-size: 16px;
+        text-align: center;
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .loyal {
+
+            &__card {
+                margin-bottom: 5%;
+                padding: 15px;
+                width: 40%;
+                background-color: #35ce3a;
+                color: #fff;
+                text-align: center;
+                border: 8px dashed #29992c;
+                border-radius: 10px;
+
+                &-discount {
+                    font-size: 72px;
+                    font-weight: bold;
+                }
+
+                &-title {
+                    margin: 15px 0 20px;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    font-family: 'Roboto Slab', serif;
+                    text-transform: uppercase;
+                }
+
+                &-descr {
+                    font-size: 14px;
+                    line-height: 1.6;
+                }
+
+                ol {
+                    list-style: decimal;
+                    list-style-position: inside;
+                }
+            }
+        }
+    }
+}
