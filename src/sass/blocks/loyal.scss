@@ -36,6 +36,10 @@
                 &-discount {
                     font-size: 72px;
                     font-weight: bold;
+
+                    &.special {
+                        text-decoration: underline;
+                    }
                 }
 
                 &-title {
@@ -54,6 +58,15 @@
                 ol {
                     list-style: decimal;
                     list-style-position: inside;
+                    text-align: left;
+                    
+                    li:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+
+                    li {
+                        line-height: 1.4;
+                    }
                 }
             }
         }

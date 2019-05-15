@@ -1,5 +1,23 @@
-.contact {
-    z-index: 1000;
+.menu-nav-toggle {
+    padding: 5px 15px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: none;
+    font-size: 36px;
+    color: #fff;
+    background-color: #3bdc4d;
+    border: 2px solid #279133;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &.active {
+        display: block;
+    }
+}
+
+.popup-nav {
+    z-index: 999;
     position: fixed;
     top: -100%;
     left: 0;
@@ -26,7 +44,8 @@
         overflow: hidden;
     }
 
-    &__form {
+    &__menu {
+        width: 100%;
         position: fixed;
         top: 50%;
         left: 50%;
@@ -37,23 +56,26 @@
     
         &-item {
             cursor: pointer;
-            padding: 10px 20px;
             font-size: 48px;
-            opacity: 0;
             text-align: center;
+            background-color: inherit;
+            opacity: 0;
             transform: translate3d(0, 36px, 0);
+
+            &:hover {
+                background-color: darken(#3bdc4d, 10);
+            }
         }
 
-        a .fa-instagram {
-          padding: 10px;
-          background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-          border-radius: 15px;
+        &-link {
+            padding: 10px 20px;
+            display: block;
         }
     }
 }
 
 
-.menu-toggle-close {
+.menu-nav-toggle-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -63,9 +85,9 @@
 
 
 
-.open {
+.open-nav {
     
-    .contact {
+    .popup-nav {
         top: 0;
 
         &:before {
@@ -73,7 +95,7 @@
         }
     }
 
-    .menu-toggle-close {
+    .menu-nav-toggle-close {
         padding: 10px;
         font-size: 24px;
         color: #fff !important;
@@ -92,7 +114,7 @@
         }
     }
 
-    .contact__form-item {
+    .popup-nav__menu-item {
         opacity: 1;
         transform: translate3d(0, 0, 0);
         transition: opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
@@ -113,6 +135,15 @@
     
         &:nth-child(4) {
             transition-delay: 1.05s;
+        }
+        &:nth-child(5) {
+            transition-delay: 1.15s;
+        }
+        &:nth-child(6) {
+            transition-delay: 1.25s;
+        }
+        &:nth-child(7) {
+            transition-delay: 1.35s;
         }
     }
 }
