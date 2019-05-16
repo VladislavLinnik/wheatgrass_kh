@@ -16,7 +16,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- FAVICON -->
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/sprout.jpg" type="image/x-icon">
 
 	<!-- FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab|Montserrat:400,700" rel="stylesheet">
@@ -25,8 +25,8 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- ПОДКЛЮЧЕНИЕ JQUERY -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- <script src="js/jquery.3.3.1.min.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<script src="js/jquery.3.3.1.min.js"></script>
 
 	<!-- SCRIPTS -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -148,7 +148,7 @@
 			</div>
 
 			<div class="about-read-more">
-				<a href="#blog" class="about-read-more">Читать подробнее</a>
+				<a href="#blog" class="about-read-more-btn">Читать подробнее</a>
 			</div>
 		</div>
 	</section>
@@ -384,11 +384,27 @@
 
 	<!-- Popup Nav Menu -->
 	<div class="contact">
+		<div class="popup-contact__logo">
+			<a href="#" class="logo-link">
+				<img class="logo-img" src="./img/logo.png" alt="">
+			</a>
+			<p class="logo-addinfo">
+				Свежевыжатый сок из ростков пшеницы
+			</p>
+		</div>
 		<div class="contact__form">
-			<form class="form">
-
+			<form class="contact__form-item contact__form-item--form">
+				<h4>Оставьте свои контакты и мы с вами свяжемся!</h4>
+				<div class="form-group">
+					<input class="contact__form-input" type="text" placeholder="Имя">
+					<input class="contact__form-input" type="tel" placeholder="Телефон">
+				</div>
+				<div class="form-group">
+					<input class="contact__form-submit" type="submit" value="Отправить">
+				</div>
 			</form>
-			<a href="instagram.com/wheatgrass_kh" target="_blank" class="contact__form-item"><i class="fab fa-instagram"></i></a>
+			<div class="contact__form-item contact__form-item--direct">Пишите нам в Direct! &darr;</div>
+			<a href="instagram.com/wheatgrass_kh" target="_blank" class="contact__form-item contact__form-item--inst"><i class="fab fa-instagram"></i><span>@wheatgrass_kh</span></a>
 		</div>
 		
 		<div class="menu-toggle-close">&#10006;</div>
@@ -413,7 +429,7 @@
 			<li class="popup-nav__menu-item"><a href="#usage" class="popup-nav__menu-link">Как принимать?</a></li>
 			<li class="popup-nav__menu-item"><a href="#loyal" class="popup-nav__menu-link">Система лояльности</a></li>
 			<li class="popup-nav__menu-item"><a href="#usage" class="popup-nav__menu-link">Блог</a></li>
-			<li class="popup-nav__menu-item"><a href="#" class="popup-nav__menu-link--order menu-toggle">Заказать</a></li>
+			<li class="popup-nav__menu-item"><a href="#" class="popup-nav__menu-link menu-toggle">Заказать</a></li>
 		</ul>
 		
 		<div class="menu-nav-toggle-close">&#10006;</div>
@@ -423,7 +439,17 @@
 	<!-- fixed button for Menu Nav Popup -->
 	<button class="menu-nav-toggle"><i class="fas fa-bars"></i></button>
 
-
+	<!-- BEGIN JIVOSITE CODE {literal} -->
+	<script type='text/javascript'>
+	(function(){ var widget_id = '3EKY3bLIUM';var d=document;var w=window;function l(){
+	  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+	  s.src = '//code.jivosite.com/script/widget/'+widget_id;
+	  var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+	  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+	  else{w.addEventListener('load',l,false);}}})();
+	</script>
+	<!-- {/literal} END JIVOSITE CODE -->
+	
 	<script src="js/index.js"></script>
 </body>
 </html>

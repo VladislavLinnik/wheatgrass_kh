@@ -43,13 +43,22 @@ $(document).ready(function(){
     });
 
 
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100){
-            $('.menu-nav-toggle').addClass("active");
-        }
-        else{
-            $('.menu-nav-toggle').removeClass("active");
-        }
-    });
+    
+
+    var screenSize = window.matchMedia('screen and (max-width: 900px)');
+    if (screenSize.matches) {
+        // размер окна 900px или меньше
+        $('.menu-nav-toggle').addClass("active");
+    } else {
+        // нет, размер окна более 900px
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100 ){
+                $('.menu-nav-toggle').addClass("active");
+            }
+            else{
+                $('.menu-nav-toggle').removeClass("active");
+            }
+        });
+    }
 
 });

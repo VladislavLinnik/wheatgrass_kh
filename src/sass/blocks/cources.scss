@@ -2,6 +2,10 @@
     background: url('../img/bg_courses.jpg') no-repeat;
     background-size: cover;
 
+    @media (max-width: 1180px) {
+        background: url('https://lvlt.thesims3.com/sims3_asset/sims3_asset/thumb/shard000/000/072/843/18/original.jpg') repeat;
+    }
+
     &-list {
         display: flex;
         justify-content: space-between;

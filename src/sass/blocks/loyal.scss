@@ -33,6 +33,18 @@
                 border: 8px dashed #29992c;
                 border-radius: 10px;
 
+                @media (max-width: 750px) {
+                    margin-bottom: 20px;
+                    width: 60%;
+                }
+
+                &:last-child {
+
+                    @media (max-width: 750px) {
+                        margin-bottom: 0;
+                    }
+                }
+
                 &-discount {
                     font-size: 72px;
                     font-weight: bold;

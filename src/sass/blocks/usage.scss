@@ -20,6 +20,11 @@
         margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 650px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__step {
@@ -29,11 +34,20 @@
         border-radius: 5px;
         border: 2px solid rgb(64, 179, 118);
 
+        @media (max-width: 750px) {
+            padding: 5px;
+        }
+
         &-line {
             height: 2px;
             width: 80px;
             align-self: center;
             background-color: rgb(64, 179, 118);
+
+            @media (max-width: 750px) {
+                height: 40px;
+                width: 2px;
+            }
         }
 
         &-number {
@@ -42,6 +56,11 @@
             font-size: 40px;
             text-align: center;
             font-weight: 700;
+
+            @media (max-width: 750px) {
+                margin-bottom: 10px;
+                font-size: 30px;
+            }
         }
 
         &-instruction {
@@ -49,6 +68,10 @@
             color: rgb(54, 54, 54);
             text-align: center;
             line-height: 1.5;
+
+            @media (max-width: 750px) {
+                font-size: 15px;
+            }
         }
     }
 

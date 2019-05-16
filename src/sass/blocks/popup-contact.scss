@@ -36,21 +36,91 @@
         color: white;
     
         &-item {
-            cursor: pointer;
             padding: 10px 20px;
             font-size: 48px;
             opacity: 0;
             text-align: center;
             transform: translate3d(0, 36px, 0);
-        }
+            cursor: pointer;
 
-        a .fa-instagram {
-          padding: 10px;
-          background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-          border-radius: 15px;
+            &--direct {
+              font-size: 20px;
+            }
+
+            &--inst {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            &--inst .fa-instagram {
+              margin-right: 10px;
+              padding: 8px;
+              font-size: 30px;
+              background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+              border-radius: 15px;
+            }
+
+            &--form {
+              margin-bottom: 40px;
+              padding: 0;
+              font-size: 18px;
+              text-align: center;
+              cursor: default;
+
+              h4 {
+                margin-bottom: 40px;
+              }
+
+              .form-group {
+                margin: 15px 0;
+                display: flex;
+                justify-content: space-between;
+              }
+
+              .contact__form-input {
+                width: 49%;
+                color: #fff;
+                font-size: 24px;
+                text-align: center;
+                border: none;
+                border-bottom: 2px solid #fff;
+                background-color: transparent;
+
+                &::placeholder {
+                  color: #fff;
+                  font-size: 22px;
+                  opacity: 1;
+                  transition: opacity 0.3s ease;
+                }
+
+                &:focus::placeholder {
+                  opacity: 0;
+                  transition: opacity 0.3s ease;
+                }
+              }
+
+              .contact__form-submit {
+                margin: auto;
+                padding: 10px 15px;
+                background-color: #ffe000;
+                color: #fff;
+                font-size: 20px;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                }
+
+                &:focus {
+                  outline: none;
+                }
+              }
+            }
         }
     }
-}
 
 
 .menu-toggle-close {
@@ -59,6 +129,34 @@
     right: 0;
     transform: translate(0, 0);
     opacity: 0;
+}
+
+.popup-contact__logo {
+  margin: 10px;
+  max-width: 160px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  z-index: 999;
+
+  .logo {
+
+      &-link {
+          margin-right: 10px;
+          max-width: 40px;
+
+      img {
+          max-width: 100%;
+      }
+  }
+
+      &-addinfo {
+          max-width: 110px;
+          font-size: 14px;
+          color: #fff;
+      }
+  }
 }
 
 
@@ -90,6 +188,12 @@
         &:hover {
             background-color: #279133;
         }
+    }
+
+    .popup-contact__logo {
+      opacity: 1;
+      transition: opacity .5s;
+      transition-delay: .75s;
     }
 
     .contact__form-item {
