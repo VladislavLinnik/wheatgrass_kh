@@ -1,11 +1,31 @@
 .about {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
+    background: url(../img/sky.jpg) no-repeat;
+    color: #fff;
+
+    &:after {
+        content: '';
+        top: 0;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .4);
+        z-index: 2;
+    }
+    
+    .container {
+        position: relative;
+        z-index: 3;
+    }
 
     &-h2 {
-        margin-top: 60px;
+        padding-top: 60px;
+        padding-bottom: 20px;
         font-weight: 700;
         font-size: 32px;
-        color: #333;
+        color: #fff;
     }
 
     &-p {
@@ -31,6 +51,7 @@
         margin-top: 72px;
         margin-bottom: 30px;
         font-size: 24px;
+        color: #fff;
         text-transform: uppercase;
         text-align: center;
         overflow: hidden;
@@ -237,6 +258,7 @@
         width: 500px;
         max-width: 90%;
         z-index: 2;
+        color: #f6f6f6;
         position: relative;
         margin: -25px auto 40px;
 
