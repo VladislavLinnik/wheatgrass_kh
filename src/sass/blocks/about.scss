@@ -2,6 +2,7 @@
     position: relative;
     font-family: 'Montserrat', sans-serif;
     background: url(../img/sky.jpg) no-repeat;
+    background-size: cover;
     color: #fff;
 
     &:after {
@@ -33,6 +34,10 @@
         font-weight: 300;
         font-size: 22px;
         line-height: 1.5;
+
+        @media (max-width: 700px) {
+            font-size: 16px;
+        }
         
         &__bold {
             font-weight: bold;
@@ -55,6 +60,11 @@
         text-transform: uppercase;
         text-align: center;
         overflow: hidden;
+
+        @media (max-width: 700px) {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
     }
 
     &-content {

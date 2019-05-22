@@ -34,6 +34,13 @@
         backface-visibility: hidden;
         perspective: 1000;
         color: white;
+
+        @media (max-width: 650px) {
+          width: 70%;
+        }
+        @media (max-width: 400px) {
+          width: 90%;
+        }
     
         &-item {
             padding: 10px 20px;
@@ -51,14 +58,33 @@
               display: flex;
               align-items: center;
               justify-content: center;
+              font-size: 30px;
+
+              @media (max-width: 550px) {
+                font-size: 24px;
+              }
             }
 
-            &--inst .fa-instagram {
+            &--inst i {
               margin-right: 10px;
               padding: 8px;
-              font-size: 30px;
               background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
               border-radius: 15px;
+            }
+
+            &--mail {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 30px;
+
+              @media (max-width: 550px) {
+                font-size: 24px;
+              }
+            }
+
+            &--mail i {
+              margin-right: 10px;
             }
 
             &--form {
@@ -68,8 +94,17 @@
               text-align: center;
               cursor: default;
 
+              @media (max-width: 550px) {
+                margin-bottom: 0;
+              }
+
               h4 {
                 margin-bottom: 40px;
+
+                @media (max-width: 550px) {
+                  margin-bottom: 0;
+                  font-size: 16px;
+                }
               }
 
               .form-group {
@@ -87,16 +122,43 @@
                 border-bottom: 2px solid #fff;
                 background-color: transparent;
 
+                @media (max-width: 550px) {
+                  font-size: 20px;
+                }
+
                 &::placeholder {
                   color: #fff;
                   font-size: 22px;
                   opacity: 1;
                   transition: opacity 0.3s ease;
+
+                  @media (max-width: 550px) {
+                    font-size: 18px;
+                  }
                 }
 
                 &:focus::placeholder {
                   opacity: 0;
                   transition: opacity 0.3s ease;
+                }
+              }
+
+              .contact__form-textarea {
+                width: 100%;
+                font-size: 20px;
+                font-style: italic;
+                color: #fff;
+                background-color: transparent;
+                border-bottom: 2px solid #fff;
+                overflow: hidden;
+                resize: none;
+
+                @media (max-width: 550px) {
+                  font-size: 18px;
+                }
+
+                &::placeholder {
+                  color: #fff;
                 }
               }
 
@@ -112,7 +174,13 @@
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
+                
+                @media (max-width: 550px) {
+                  font-size: 16px;
                 }
+              }
+
+                
 
                 &:focus {
                   outline: none;
@@ -139,6 +207,10 @@
   align-items: center;
   opacity: 0;
   z-index: 999;
+
+  @media (max-width: 780px) {
+    display: none;
+  }
 
   .logo {
 
@@ -184,6 +256,10 @@
         transition: opacity, transform 1s;
         transition-delay: .75s;
         cursor: pointer;
+
+        @media (max-width: 650px) {
+          transform: translate(-10px, 10px);
+        }
 
         &:hover {
             background-color: #279133;

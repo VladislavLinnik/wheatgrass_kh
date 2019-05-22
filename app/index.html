@@ -385,7 +385,7 @@
 
 
 
-	<!-- instagram -->
+	<!-- instagram gallery -->
 	<!-- <section class="instagram">
 		<div class="container">
 			
@@ -405,18 +405,25 @@
 			</p>
 		</div>
 		<div class="contact__form">
-			<form class="contact__form-item contact__form-item--form">
+			<form class="contact__form-item contact__form-item--form" action="https://formspree.io/grass.greenline@gmail.com" method="POST">
 				<h4>Оставьте свои контакты и мы с вами свяжемся!</h4>
 				<div class="form-group">
-					<input class="contact__form-input" type="text" placeholder="Имя">
-					<input class="contact__form-input" type="tel" placeholder="Телефон">
+					<input class="contact__form-input" name="name" type="text" placeholder="Имя">
+					<input class="contact__form-input" name="phone" type="tel" placeholder="Телефон">
+				</div>
+				<div class="form-group">
+					<input class="contact__form-input" name="email" type="email" placeholder="Электронная почта" style="margin: 15px auto; width: 100%;">
+				</div>
+				<div class="form-group">
+					<textarea class="contact__form-textarea js-textareaAutoHeight" name="message" placeholder="Сообщение"></textarea>
 				</div>
 				<div class="form-group">
 					<input class="contact__form-submit" type="submit" value="Отправить">
 				</div>
 			</form>
 			<div class="contact__form-item contact__form-item--direct">Пишите нам в Direct! &darr;</div>
-			<a href="instagram.com/wheatgrass_kh" target="_blank" class="contact__form-item contact__form-item--inst"><i class="fab fa-instagram"></i><span>@wheatgrass_kh</span></a>
+			<a href="https://instagram.com/wheatgrass_kh" target="_blank" class="contact__form-item contact__form-item--inst"><i class="fab fa-instagram"></i><span>@wheatgrass_kh</span></a>
+			<a href="mailto:grass.greenline@gmail.com" target="_blank" class="contact__form-item contact__form-item--mail"><i class="fas fa-envelope"></i><span>@grass.greenline@gmail.com</span></a>
 		</div>
 		
 		<div class="menu-toggle-close">&#10006;</div>

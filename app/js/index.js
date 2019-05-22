@@ -43,6 +43,18 @@ $(document).ready(function(){
     });
 
 
+    // auto-height for textarea
+    $('body').on('keydown', '.js-textareaAutoHeight', function () {
+        var self = this;
+
+        setTimeout(function () {
+            $(self)
+                .css('height', 'auto')
+                .css('height', self.scrollHeight + 'px');
+        }, 0);
+    });
+
+
     
 
     var screenSize = window.matchMedia('screen and (max-width: 900px)');
