@@ -10,7 +10,7 @@ gulp.task('styles',function(){
                     browsers: ['> 0.1%']
                 }))
                 .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-                .pipe(gulp.dest('./app/css/'))
+                .pipe(gulp.dest('./source/css/'))
 });
 
 gulp.task('default', ['styles']);
